@@ -5,13 +5,13 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "AIzaSyAm9f8lXKrJXxgms4SsUAOavZZzRpzHRyI",
-    authDomain: "employee-database-e00b4.firebaseapp.com",
-    databaseURL: "https://employee-database-e00b4.firebaseio.com",
-    projectId: "employee-database-e00b4",
-    storageBucket: "employee-database-e00b4.appspot.com",
-    messagingSenderId: "820132658736",
-    appId: "1:820132658736:web:d21957bd59aa54ed4837f5"
+    apiKey: "HIDING API KEY",
+    authDomain: "HIDING DOMAIN",
+    databaseURL: "HIDING DATABASE",
+    projectId: "HIDING PROJECT ID",
+    storageBucket: "HIDING STORAGE BUCKET",
+    messagingSenderId: "HIDING SENDER ID",
+    appId: "HIDING APP ID"
   }
 };
 
