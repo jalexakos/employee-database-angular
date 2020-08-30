@@ -1,0 +1,71 @@
+section {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "employeeFirstName todoNameDisplay"
+    "employeeLastName todoDescriptionDisplay"
+    "employeeAddress todoCategoryDisplay"
+    "employeeDOB blank"
+    "submitButton submitButton";
+}
+
+#employeeFirstName{
+    grid-area: employeeFirstName;
+    border: 1px solid black;
+    display: block;
+}
+
+#employeeLastName{
+    grid-area: employeeLastName;
+    border: 1px solid black;
+    display: block;
+}
+
+#employeeAddress{
+    grid-area: employeeAddress;
+    border: 1px solid black;
+    display: block;
+}
+
+#employeeDOB{
+    grid-area: employeeDOB;
+    border: 1px solid black;
+    display: block;
+}
+
+#employeeFirstName,#employeeLastName,#employeeAddress, #employeeDOB, label,button{
+    margin-left: 30vw;
+}
+
+// #todoNameDisplay {
+//     grid-area: todoNameDisplay;
+//     font-size: 1.3em;
+//     margin: 5px 0;
+// }
+
+// #todoDescriptionDisplay{
+//     grid-area: todoDescriptionDisplay;
+//     font-size: 1.3em;
+//     margin: 5px 0;
+// }
+
+// #todoCategoryDisplay{
+//     grid-area: todoCategoryDisplay;
+//     font-size: 1.3em;
+//     margin: 5px 0;
+// }
+
+
+
+.alert{
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.alert-danger{
+    color: red;
+    margin-left: 30vw;
+}

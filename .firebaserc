@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "employee-database-e00b4": {
+      "hosting": {
+        "employee-database": [
+          "employee-database-e00b4"
+        ]
+      }
+    }
+  }
+}

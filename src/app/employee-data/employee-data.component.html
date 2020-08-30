@@ -1,0 +1,36 @@
+<h1>Current Employees</h1>
+
+<div *ngFor="let data of data; let i = index">
+    <ul>
+        <li>{{ data.id }}</li>
+        <li>{{ data.employeeFirstName }}</li>
+        <li>{{ data.employeeLastName }}</li>
+        <li>{{ data.employeeAddress }}</li>
+        <li>{{ data.employeeDOB }}</li>
+    </ul>
+    <button mat-raised-button color="primary" (click)="toggle()">Update Employee</button>
+    <button mat-raised-button color="warn" (click)="delete(data.id)">Delete Employee</button>
+
+    <form [formGroup] = "updateForm" *ngIf="show">
+        <label for="employeeFirstName">Employee First Name:</label>
+        <input type="text" formControlName = "employeeFirstName" id="employeeFirstName">
+        <div *ngIf="employeeFirstName.invalid && (employeeFirstName.dirty || employeeFirstName.touched)" class="alert alert-danger">Employee First Name is Required</div>
+    
+        <label for="employeeLastName">Todo Description</label>
+        <input type="text" formControlName = "employeeLastName" id="employeeLastName">
+        <div *ngIf="employeeLastName.invalid && (employeeLastName.dirty || employeeLastName.touched)" class="alert alert-danger">Employee Last Name is Required</div>
+    
+        <label for="employeeAddress">employee Address</label>
+        <input type="text" formControlName = "employeeAddress" id="employeeAddress">
+        <div *ngIf="employeeAddress.invalid && (employeeAddress.dirty || employeeAddress.touched)" class="alert alert-danger">employee Address is Required with at least 5 characters</div>
+
+        <label for="employeeDOB">Employee Date of Birth</label>
+        <input type="text" formControlName = "employeeDOB" id="employeeDOB">
+        <div *ngIf="employeeDOB.invalid && (employeeDOB.dirty || employeeDOB.touched)" class="alert alert-danger">Employee Date of Birth is Required</div>
+    
+        <button type= "button" (click) = "onSubmit(data.id,employeeFirstNameValue,employeeLastNameValue,employeeAddressValue,employeeDOBValue)" id="submitButton">Submit</button>
+    </form>
+    </div>
+    
+
+    

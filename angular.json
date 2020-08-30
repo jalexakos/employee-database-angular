@@ -121,8 +121,16 @@
               "devServerTarget": "employee-database:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
-  "defaultProject": "employee-database"
+    }
+  },
+  "defaultProject": "employee-database",
+  "cli": {
+    "analytics": false
+  }
 }
